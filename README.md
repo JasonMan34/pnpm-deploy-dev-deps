@@ -12,7 +12,7 @@ Packages found in the workspace: pnpm-deploy-dev-deps, app
 ```
 
 ### Expected:
-No error. `@workspace/missing` is irrelevant to the command since I'm deploying in `--prod` mode and devDependencies should be ignored
+No error. `@workspace/missing` is irrelevant to the command since we're deploying in `--prod` mode and devDependencies should be ignored
 
 ### Rationale:
 A Dockerfile that does not copy local-only dependencies, such as an eslint config, fails on the `deploy` stage

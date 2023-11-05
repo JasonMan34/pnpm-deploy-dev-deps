@@ -1,0 +1,17 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .: {}
+
+  packages/app:
+    devDependencies:
+      '@workspace/missing':
+        specifier: workspace:*
+        version: link:missing
+
+  packages/app/missing: {}
